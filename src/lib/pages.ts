@@ -734,7 +734,7 @@ export const pages:PageData[]=[
       "heading": "Bank, loose and compacted cubic yards explained",
       "paragraphs": [
         "These are three different measurement states. <strong>Bank cubic yards (BCY)</strong> describe earth in its original undisturbed position. <strong>Loose cubic yards (LCY)</strong> describe excavated or stockpiled material after its structure is disturbed. <strong>Compacted cubic yards (CCY)</strong> describe fill placed and compacted to the specified condition.",
-        "A volume of material may swell when dug, then reduce in volume when placed and compacted. The [[Federal Highway Administration's earthwork design guidance|https://highways.dot.gov/federal-lands/pddm/dpg/earthwork-design]] explains how shrink and swell depend on material and field conditions. A cubic yard measured in place cannot simply be assumed to equal one cubic yard in a truck.",
+        "A volume of material may swell when dug, then reduce in volume when placed and compacted. The [[Federal Highway Administration's earthwork design guidance|https://highways.fhwa.dot.gov/federal-lands/design/tools/cfl/earthwork-representation-guide.pdf]] explains how shrink and swell depend on material and field conditions. A cubic yard measured in place cannot simply be assumed to equal one cubic yard in a truck.",
         "Use density measurements or project-specific swell and shrinkage factors when converting between states. The calculator's extra percentage field is for scenarios, not a substitute for geotechnical testing or an earthwork mass-balance plan."
       ],
       "table": {
