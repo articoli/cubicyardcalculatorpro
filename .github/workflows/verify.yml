@@ -27,6 +27,13 @@ jobs:
           test -f out/index.html
           test -f out/sitemap.xml
           test -f out/robots.txt
+          test -f out/images/featured/home.webp
+          test -f out/images/featured/guides.webp
+          test -f out/images/featured/contact.webp
+          for slug in concrete-cubic-yard-calculator gravel-cubic-yard-calculator mulch-cubic-yard-calculator topsoil-cubic-yard-calculator fill-dirt-cubic-yard-calculator cubic-feet-to-cubic-yards square-feet-to-cubic-yards cubic-yards-to-tons cubic-meters-to-cubic-yards about calculation-methodology; do
+            test -f "out/$slug/index.html"
+            test -f "out/images/featured/$slug.webp"
+          done
           test -f out/guides/index.html
           test -f out/contact/index.html
           for slug in how-to-calculate-cubic-yards what-is-a-cubic-yard cubic-yard-coverage-chart; do

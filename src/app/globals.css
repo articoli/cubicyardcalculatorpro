@@ -233,3 +233,30 @@ a{color:#087366;text-decoration:none}a:hover{text-decoration:underline}h1,h2,h3,
 .contact-action:hover{text-decoration:none;background:#0a675b}
 .contact-warning{font-size:.82rem!important;background:#f3f7f4;border-left:3px solid #6ea58e;border-radius:0 8px 8px 0;padding:12px 15px}
 .guide-category-section>p{font-size:.88rem;max-width:700px}
+
+
+/* Page-specific WebP features, preserving calculator-first layouts */
+.home-hero .hero-feature{margin:0;transform:none;height:auto;aspect-ratio:1.4;position:relative;isolation:isolate;overflow:hidden;border:1px solid #ffffff32;border-radius:17px;box-shadow:0 20px 60px #021e2740;background:#163b40}
+.hero-feature>img{display:block;width:100%;height:100%;object-fit:cover}
+.hero-feature:after{content:"";pointer-events:none;position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#092a35b7)}
+.hero-photo-label{position:absolute;z-index:1;right:17px;bottom:32px;background:#0e4548ce;border:1px solid #ffffff44;border-radius:11px;padding:9px 15px;color:white;display:grid;gap:2px}
+.hero-photo-label strong{font-size:1.12rem;color:white}
+.hero-photo-label span{font-size:.77rem;color:#d7eee6}
+.hero-feature figcaption{position:absolute;z-index:1;bottom:6px;right:18px;font-size:.63rem;color:#c7ddd8}
+.hero-feature figcaption a{color:#d4f1e6;text-decoration:underline}
+.archive-feature-figure,.contact-feature-figure{margin:24px 0 20px;max-width:1000px}
+.archive-feature-figure img,.contact-feature-figure img{display:block;width:100%;height:auto;max-height:330px;object-fit:cover;border-radius:16px;border:1px solid #d5e5db}
+.archive-feature-figure figcaption,.contact-feature-figure figcaption{font-size:.72rem;color:#687a72;margin-top:8px}
+.archive-feature-figure figcaption a,.contact-feature-figure figcaption a{text-decoration:underline}
+.page-content>.expansion-feature{margin-top:34px;margin-bottom:16px}
+@media(max-width:800px){
+ .home-hero .hero-feature{display:block;width:min(100%,610px);height:auto;aspect-ratio:16/9;margin-top:14px;transform:none}
+ .home-hero .hero-grid{gap:16px}
+ .home-hero{padding-bottom:64px}
+}
+@media(max-width:520px){
+ .home-hero .hero-feature{aspect-ratio:16/10}
+ .hero-photo-label{bottom:28px;right:10px;padding:6px 11px}
+ .hero-photo-label strong{font-size:.93rem}
+ .archive-feature-figure img,.contact-feature-figure img{max-height:220px}
+}

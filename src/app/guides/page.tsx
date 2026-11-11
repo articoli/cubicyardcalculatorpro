@@ -11,7 +11,8 @@ export const metadata:Metadata={
  title:"Cubic Yard Guides & Blog | Calculators, Materials and Planning",
  description:"Read detailed guides and use specialist calculators for cubic yards, gravel, sand, compost, hauling, material costs, conversions and project planning.",
  alternates:{canonical:"/guides/"},
- openGraph:{url:SITE.url+"/guides/",title:"Cubic Yard Guides & Blog",description:"In-depth formulas, material estimators, measurement tutorials and buying guides."}
+ openGraph:{url:SITE.url+"/guides/",title:"Cubic Yard Guides & Blog",description:"In-depth formulas, material estimators, measurement tutorials and buying guides.",images:[{url:SITE.url+"/images/featured/guides.webp",width:1120,height:630,alt:"Architectural plans and measurements for construction guides"}]},
+ twitter:{card:"summary_large_image",images:[SITE.url+"/images/featured/guides.webp"]}
 };
 const groups=[
  {id:"measurement-guides",title:"Measurement & Formula Guides",desc:"Understand the units, calculations and measurement methods used across the site.",slugs:["how-to-calculate-cubic-yards","what-is-a-cubic-yard","cubic-yard-coverage-chart","cubic-yard-vs-square-yard","how-to-measure-irregular-areas"]},
@@ -22,7 +23,8 @@ const groups=[
 const all=[...guideLinks,...expansionPages.filter(p=>p.type!=="guide")];
 export default function GuidesPage(){
  const schema={"@context":"https://schema.org","@graph":[
-  {"@type":"CollectionPage","@id":SITE.url+"/guides/#page",url:SITE.url+"/guides/",name:"Cubic Yard Guides & Blog",description:"Cubic yard measurement articles, specialist calculator guides, and material planning references",isPartOf:{"@id":SITE.url+"/#website"}},
+  {"@type":"ImageObject","@id":SITE.url+"/guides/#image",contentUrl:SITE.url+"/images/featured/guides.webp",caption:"Construction planning measurement tools"},
+  {"@type":"CollectionPage","@id":SITE.url+"/guides/#page",url:SITE.url+"/guides/",name:"Cubic Yard Guides & Blog",description:"Cubic yard measurement articles, specialist calculator guides, and material planning references",primaryImageOfPage:{"@id":SITE.url+"/guides/#image"},isPartOf:{"@id":SITE.url+"/#website"}},
   {"@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:SITE.url+"/"},{"@type":"ListItem",position:2,name:"Guides",item:SITE.url+"/guides/"}]},
   {"@type":"ItemList",name:"Cubic Yard Guides and Calculator Articles",itemListElement:all.map((p,i)=>({"@type":"ListItem",position:i+1,url:SITE.url+"/"+p.slug+"/",name:p.h1}))}
  ]};
@@ -33,6 +35,7 @@ export default function GuidesPage(){
   <div className="guide-archive-stats"><span>{all.length} detailed resources</span><span>Material-specific examples</span><span>Clear limitations and sources</span></div>
  </div></header>
  <div className="container guide-archive-main">
+ <figure className="archive-feature-figure"><img src="/images/featured/guides.webp" alt="Construction design blueprints with a measuring tape and drafting instruments" width={1120} height={630} loading="eager" decoding="async"/><figcaption>Planning and measurement reference photograph from <a href="https://www.pexels.com/photo/4792508/" target="_blank" rel="noopener noreferrer">Pexels</a>.</figcaption></figure>
  <nav className="guide-category-links" aria-label="Guide categories"><a href="#all-guides">All resources</a>{groups.map(g=><a key={g.id} href={"#"+g.id}>{g.title}</a>)}</nav>
  <section className="content-block guide-archive-section" id="all-guides"><div className="section-label">TOPICALLY ORGANIZED RESOURCE LIBRARY</div>
  <h2>Browse all guides and calculators</h2><p>Each page has a distinct purpose. The main homepage calculator answers generic volume questions, while these resources focus on specific measurements, materials, purchasing and project planning.</p>

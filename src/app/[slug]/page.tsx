@@ -18,7 +18,7 @@ export const dynamicParams=false;
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{
  const {slug}=await params;const p=pageMap[slug];if(!p)return {};
  const originalGuide=guideArticles[slug],newArticle=expansionArticles[slug],photo=featuredImage(slug);
- const image=newArticle&&photo?SITE.url+photo.file:originalGuide?.image;
+ const image=photo?SITE.url+photo.file:originalGuide?.image;
  const article=p.type==="guide";
  return {
   title:p.title,
@@ -61,7 +61,8 @@ export default async function TopicPage({params}:{params:Promise<{slug:string}>}
    </div></section>
    <div className="container main-content page-content">
     {app&&<div id="calculator" className="calculator-anchor">{newArticle?<ExtendedCalculator slug={slug}/>:<Calculator mode={p.mode} initialMaterial={p.material??(p.mode==="tons"?"gravel":"generic")}/>}</div>}
-    {newArticle?<><NewFeature slug={slug}/><ExpansionArticle slug={slug}/></>:<>
+    {!newArticle&&!existingGuide&&photo&&<NewFeature slug={slug} loading="lazy"/>}
+    {newArticle?<><NewFeature slug={slug} loading="lazy"/><ExpansionArticle slug={slug}/></>:<>
       {existingGuide&&<><GuideFeature slug={slug}/><GuideArticle page={p}/></>}
       {p.type==="conversion"&&<ConversionEditorial slug={slug}/>}
       {p.type==="material"&&<MaterialEditorial slug={slug}/>}

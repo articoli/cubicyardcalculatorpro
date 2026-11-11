@@ -117,5 +117,103 @@
     "sourcePage": "https://www.pexels.com/photo/17312060/",
     "alt": "Gravel garden path illustrating how material volume covers an area",
     "file": "/images/featured/cubic-yard-coverage-chart.webp"
+  },
+  {
+    "slug": "home",
+    "source": "https://images.pexels.com/photos/4792483/pexels-photo-4792483.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/4792483/",
+    "alt": "Architectural plans, measuring tape and pen on a wooden worktable",
+    "file": "/images/featured/home.webp"
+  },
+  {
+    "slug": "concrete-cubic-yard-calculator",
+    "source": "https://images.pexels.com/photos/37121406/pexels-photo-37121406.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/37121406/",
+    "alt": "Construction crew pouring and leveling wet concrete from a mixer truck",
+    "file": "/images/featured/concrete-cubic-yard-calculator.webp"
+  },
+  {
+    "slug": "gravel-cubic-yard-calculator",
+    "source": "https://images.pexels.com/photos/28101589/pexels-photo-28101589.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/28101589/",
+    "alt": "Close-up pile of crushed rock and coarse gravel aggregate",
+    "file": "/images/featured/gravel-cubic-yard-calculator.webp"
+  },
+  {
+    "slug": "mulch-cubic-yard-calculator",
+    "source": "https://images.pexels.com/photos/12029150/pexels-photo-12029150.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/12029150/",
+    "alt": "Bark mulch covering a garden planting bed beside green shrubs",
+    "file": "/images/featured/mulch-cubic-yard-calculator.webp"
+  },
+  {
+    "slug": "topsoil-cubic-yard-calculator",
+    "source": "https://images.pexels.com/photos/29555030/pexels-photo-29555030.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/29555030/",
+    "alt": "Close-up of rich dark garden soil ready for planting",
+    "file": "/images/featured/topsoil-cubic-yard-calculator.webp"
+  },
+  {
+    "slug": "fill-dirt-cubic-yard-calculator",
+    "source": "https://images.pexels.com/photos/29506754/pexels-photo-29506754.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/29506754/",
+    "alt": "Excavator loading fill dirt into a dump truck at a construction site",
+    "file": "/images/featured/fill-dirt-cubic-yard-calculator.webp"
+  },
+  {
+    "slug": "cubic-feet-to-cubic-yards",
+    "source": "https://images.pexels.com/photos/4792479/pexels-photo-4792479.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/4792479/",
+    "alt": "Measurement tape and drafting tools laid across construction plans",
+    "file": "/images/featured/cubic-feet-to-cubic-yards.webp"
+  },
+  {
+    "slug": "square-feet-to-cubic-yards",
+    "source": "https://images.pexels.com/photos/7148003/pexels-photo-7148003.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/7148003/",
+    "alt": "Measuring tape spread across design drawings to calculate area and depth",
+    "file": "/images/featured/square-feet-to-cubic-yards.webp"
+  },
+  {
+    "slug": "cubic-yards-to-tons",
+    "source": "https://images.pexels.com/photos/9762073/pexels-photo-9762073.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/9762073/",
+    "alt": "Earthmoving excavator loading soil into a dump truck",
+    "file": "/images/featured/cubic-yards-to-tons.webp"
+  },
+  {
+    "slug": "cubic-meters-to-cubic-yards",
+    "source": "https://images.pexels.com/photos/6281140/pexels-photo-6281140.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/6281140/",
+    "alt": "Architectural plans and measuring rulers on a drafting table",
+    "file": "/images/featured/cubic-meters-to-cubic-yards.webp"
+  },
+  {
+    "slug": "about",
+    "source": "https://images.pexels.com/photos/8961133/pexels-photo-8961133.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/8961133/",
+    "alt": "Construction professionals reviewing project blueprints outdoors",
+    "file": "/images/featured/about.webp"
+  },
+  {
+    "slug": "calculation-methodology",
+    "source": "https://images.pexels.com/photos/11269741/pexels-photo-11269741.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/11269741/",
+    "alt": "Architect carefully measuring a blueprint with a ruler",
+    "file": "/images/featured/calculation-methodology.webp"
+  },
+  {
+    "slug": "contact",
+    "source": "https://images.pexels.com/photos/5185157/pexels-photo-5185157.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/5185157/",
+    "alt": "Hands taking notes beside a computer keyboard at a work desk",
+    "file": "/images/featured/contact.webp"
+  },
+  {
+    "slug": "guides",
+    "source": "https://images.pexels.com/photos/4792508/pexels-photo-4792508.jpeg?auto=compress&cs=tinysrgb&w=1500",
+    "sourcePage": "https://www.pexels.com/photo/4792508/",
+    "alt": "Architectural workspace with building plans and a measuring tape",
+    "file": "/images/featured/guides.webp"
   }
 ]

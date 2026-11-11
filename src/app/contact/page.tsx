@@ -4,16 +4,19 @@ import {SITE} from "@/lib/site";
 export const metadata:Metadata={
  title:"Contact | Cubic Yard Calculator Pro",
  description:"Contact Cubic Yard Calculator Pro about calculator errors, editorial corrections or technical feedback through our public GitHub issue tracker.",
- alternates:{canonical:"/contact/"}
+ alternates:{canonical:"/contact/"},
+ openGraph:{title:"Contact | Cubic Yard Calculator Pro",url:SITE.url+"/contact/",images:[{url:SITE.url+"/images/featured/contact.webp",alt:"Notebook and computer workstation"}]},
+ twitter:{card:"summary_large_image",images:[SITE.url+"/images/featured/contact.webp"]}
 };
 export default function Contact(){
  const url=SITE.url+"/contact/";
  const schema={"@context":"https://schema.org","@graph":[
-  {"@type":"ContactPage",url,name:"Contact Cubic Yard Calculator Pro",description:"Public feedback contact for calculator or editorial corrections",isPartOf:{"@id":SITE.url+"/#website"}},
+  {"@type":"ImageObject","@id":url+"#image",contentUrl:SITE.url+"/images/featured/contact.webp",caption:"Notes and computer keyboard on an office desk"},
+  {"@type":"ContactPage",url,name:"Contact Cubic Yard Calculator Pro",primaryImageOfPage:{"@id":url+"#image"},description:"Public feedback contact for calculator or editorial corrections",isPartOf:{"@id":SITE.url+"/#website"}},
   {"@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:SITE.url+"/"},{"@type":"ListItem",position:2,name:"Contact",item:url}]}
  ]};
  return <div><header className="legal-hero"><div className="container"><nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>Contact</span></nav><div className="eyebrow light">SITE FEEDBACK</div><h1>Contact &amp; Corrections</h1><p>Help improve the accuracy and usability of Cubic Yard Calculator Pro.</p></div></header>
- <div className="container contact-main"><section><h2>Report a calculator problem or content correction</h2><p>If you notice an incorrect formula, a broken link or a confusing explanation, you can report it using the public issue tracker for this website's GitHub repository. Include the page URL, your measured inputs and the result you expected.</p>
+ <div className="container contact-main"><figure className="contact-feature-figure"><img src="/images/featured/contact.webp" alt="Person writing notes at a workspace beside a computer keyboard" width={1120} height={630} loading="eager" decoding="async"/><figcaption>Workspace photograph from <a href="https://www.pexels.com/photo/5185157/" target="_blank" rel="noopener noreferrer">Pexels</a>.</figcaption></figure><section><h2>Report a calculator problem or content correction</h2><p>If you notice an incorrect formula, a broken link or a confusing explanation, you can report it using the public issue tracker for this website's GitHub repository. Include the page URL, your measured inputs and the result you expected.</p>
  <a className="contact-action" href="https://github.com/articoli/cubicyardcalculatorpro/issues/new" target="_blank" rel="noopener noreferrer">Open a GitHub issue ↗</a>
  <p className="contact-warning"><strong>Privacy note:</strong> GitHub issues are public and require a GitHub account. Please do not include personal details, private addresses, passwords or sensitive project information. This channel is for public technical and editorial feedback only, not private privacy requests.</p>
  </section>

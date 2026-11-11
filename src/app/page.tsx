@@ -10,12 +10,14 @@ export const metadata: Metadata = {
   title: "Cubic Yard Calculator – Concrete, Gravel, Mulch & Soil",
   description: "Free cubic yard calculator for concrete, gravel, mulch and soil. Calculate yardage from feet, inches or square footage, with formulas and coverage charts.",
   alternates: { canonical: "/" },
+  twitter: { card: "summary_large_image", images: [SITE.url + "/images/featured/home.webp"] },
   openGraph: {
     type: "website",
     url,
     siteName: SITE.name,
     title: "Cubic Yard Calculator | Free Material Volume Estimator",
     description: "Calculate cubic yards for construction and landscaping. Check volume formulas, coverage by depth, material ordering tips and worked examples.",
+    images: [{ url: SITE.url + "/images/featured/home.webp", width: 1120, height: 630, alt: "Architectural plans and measuring tape for planning material quantities" }],
   },
 };
 
@@ -178,6 +180,13 @@ const homeSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "ImageObject",
+      "@id": url + "#image",
+      contentUrl: SITE.url + "/images/featured/home.webp",
+      url: SITE.url + "/images/featured/home.webp",
+      caption: "Construction measurements and material quantity planning",
+    },
+    {
       "@type": "WebPage",
       "@id": url + "#webpage",
       url,
@@ -186,6 +195,7 @@ const homeSchema = {
       inLanguage: "en-US",
       isPartOf: { "@id": url + "#website" },
       mainEntity: { "@id": url + "#calculator" },
+      primaryImageOfPage: { "@id": url + "#image" },
       about: [
         { "@type": "Thing", name: "Cubic yard" },
         { "@type": "Thing", name: "Volume measurement" },
@@ -234,13 +244,11 @@ export default function HomePage() {
             </div>
             <a className="hero-btn" href="#calculator">Calculate cubic yards <span aria-hidden="true">↓</span></a>
           </div>
-          <div className="hero-visual" aria-hidden="true">
-            <div className="visual-grid" />
-            <div className="cube-top" /><div className="cube-left" /><div className="cube-right" />
-            <div className="visual-measure visual-height">3 ft</div>
-            <div className="visual-measure visual-width">3 ft</div>
-            <div className="visual-tag"><strong>1 yd³</strong><span>= 27 cubic feet</span></div>
-          </div>
+          <figure className="hero-visual hero-feature">
+            <img src="/images/featured/home.webp" width={1120} height={630} alt="Blueprints and a tape measure on a desk, used for planning construction material quantities" fetchPriority="high" decoding="async" />
+            <div className="hero-photo-label" aria-hidden="true"><strong>1 cubic yard</strong><span>= 27 cubic feet</span></div>
+            <figcaption>Project measurement photograph from <a href="https://www.pexels.com/photo/4792483/" target="_blank" rel="noopener noreferrer">Pexels</a>.</figcaption>
+          </figure>
         </div>
       </section>
 

@@ -17,8 +17,8 @@ function Rich({value}:{value:string}):ReactNode{
  }
  if(pos<value.length)parts.push(value.slice(pos));return <>{parts}</>;
 }
-export function NewFeature({slug}:{slug:string}){const item=images.get(slug);if(!item)return null;return <figure className="expansion-feature">
- <div><img src={item.file} alt={item.alt} width={1120} height={630} loading="eager" decoding="async"/></div>
+export function NewFeature({slug,loading="eager"}:{slug:string;loading?:"eager"|"lazy"}){const item=images.get(slug);if(!item)return null;return <figure className="expansion-feature">
+ <div><img src={item.file} alt={item.alt} width={1120} height={630} loading={loading} decoding="async"/></div>
  <figcaption>Editorial photograph: <a href={item.sourcePage} target="_blank" rel="noopener noreferrer">Pexels source</a>. Locally generated WebP version.</figcaption>
  </figure>;}
 export function ExpansionArticle({slug}:{slug:string}){
