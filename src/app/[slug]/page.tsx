@@ -46,7 +46,7 @@ export default async function TopicPage({params}:{params:Promise<{slug:string}>}
   ...(app?{mainEntity:{"@id":href+"#calculator"}}:{}),
   ...(photo?{primaryImageOfPage:{"@id":href+"#image"}}:{})
  });
- if(photo)graph.push({"@type":"ImageObject","@id":href+"#image",contentUrl:SITE.url+photo.file,url:SITE.url+photo.file,caption:photo.alt,width:1120,height:630});
+ if(photo)graph.push({"@type":"ImageObject","@id":href+"#image",contentUrl:SITE.url+photo.file,url:SITE.url+photo.file,caption:photo.alt});
  if(app)graph.push({"@type":"WebApplication","@id":href+"#calculator",name:p.h1,url:href,description:p.description,applicationCategory:"UtilitiesApplication",operatingSystem:"Any modern web browser",browserRequirements:"Requires JavaScript to calculate results",isAccessibleForFree:true,offers:{"@type":"Offer",price:"0",priceCurrency:"USD"},mainEntityOfPage:{"@id":href+"#webpage"}});
  if(isGuide){
   const image=photo?SITE.url+photo.file:existingGuide?.image;
