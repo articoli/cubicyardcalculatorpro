@@ -1,3 +1,4 @@
+import { expansionPages } from "./expansion-pages";
 export type PageType = "conversion" | "material" | "guide" | "trust";
 export type CalcMode = "feet" | "area" | "tons" | "meters" | "dimensions" | "none";
 export type ContentTable = { caption: string; headers: string[]; rows: (string | number)[][]; note?: string };
@@ -8,6 +9,8 @@ export type PageData = {
  material?: "concrete"|"gravel"|"mulch"|"topsoil"|"fill-dirt"|"sand";
 };
 export const pages:PageData[]=[
+ ...expansionPages,
+
 {
  slug:"cubic-feet-to-cubic-yards",title:"Cubic Feet to Cubic Yards Calculator | Convert ft³ to yd³",h1:"Cubic Feet to Cubic Yards Calculator",
  description:"Convert cubic feet to cubic yards accurately. Use the interactive ft³ to yd³ converter, formula, worked examples and quick reference.",
