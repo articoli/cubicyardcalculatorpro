@@ -273,3 +273,18 @@ a{color:#087366;text-decoration:none}a:hover{text-decoration:underline}h1,h2,h3,
 .material-playbook .material-examples{padding-top:36px}
 .material-playbook .material-choices{padding-top:36px}
 @media(max-width:640px){.focused-link-grid{grid-template-columns:1fr}.focused-link-grid>a{min-height:0}.material-playbook .material-answer{padding:18px!important}}
+
+/* Keep longer unit suffixes fully readable in compact calculator fields.
+   A flexible numeric input takes remaining space; suffix never shrinks. */
+.calc-shell .input-wrap input,
+.extended-calc .input-wrap input {
+  flex: 1 1 0%;
+  width: 0;
+  min-width: 0;
+}
+.calc-shell .input-wrap .unit,
+.extended-calc .input-wrap .unit {
+  flex: 0 0 auto;
+  min-width: max-content;
+  white-space: nowrap;
+}
