@@ -15,7 +15,7 @@ export const metadata: Metadata = {
  robots:{index:true,follow:true},
 };
 export const viewport:Viewport={width:"device-width",initialScale:1,themeColor:"#113a42"};
-const siteStructuredData={"@context":"https://schema.org","@type":"WebSite",name:SITE.name,url:SITE.url,description:SITE.description};
+const siteStructuredData={"@context":"https://schema.org","@type":"WebSite","@id":SITE.url+"/#website",name:SITE.name,url:SITE.url+"/",description:SITE.description,inLanguage:"en-US"};
 export default function RootLayout({children}:{children:React.ReactNode}){
  return <html lang="en"><body><a href="#main" className="skip-link">Skip to main content</a><Header/><main id="main">{children}</main><Footer/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(siteStructuredData)}}/></body></html>;
 }
