@@ -260,3 +260,16 @@ a{color:#087366;text-decoration:none}a:hover{text-decoration:underline}h1,h2,h3,
  .hero-photo-label strong{font-size:.93rem}
  .archive-feature-figure img,.contact-feature-figure img{max-height:220px}
 }
+
+
+/* Focused contextual links and streamlined unique material takeoffs */
+.focused-link-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.focused-link-grid>a{display:flex;flex-direction:column;justify-content:center;gap:7px;border:1px solid #dce8df;background:#f7faf7;border-radius:11px;padding:16px 18px;min-height:88px}
+.focused-link-grid>a:hover{background:#e9f5ec;border-color:#b2d8c4;text-decoration:none}
+.focused-link-grid strong{color:#17695c;font-size:.89rem}
+.focused-link-grid span{font-size:.76rem;color:#58756c;line-height:1.55}
+.material-playbook .material-answer{margin-top:30px;padding:20px 27px!important}
+.material-playbook .material-answer .material-answer-main{margin:5px 0 10px}
+.material-playbook .material-examples{padding-top:36px}
+.material-playbook .material-choices{padding-top:36px}
+@media(max-width:640px){.focused-link-grid{grid-template-columns:1fr}.focused-link-grid>a{min-height:0}.material-playbook .material-answer{padding:18px!important}}
