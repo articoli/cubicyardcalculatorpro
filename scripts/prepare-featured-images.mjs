@@ -2,6 +2,18 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 
+// Generate PNG favicon fallbacks from the committed SVG source. Cloudflare uses
+// "npx next build", so these must exist before the static export copies /public.
+const faviconSvg=await fs.readFile(path.resolve("public/favicon.svg"));
+await Promise.all([
+  ["favicon-16x16.png",16],
+  ["favicon-32x32.png",32],
+  ["apple-touch-icon.png",180],
+].map(async ([name,size])=>{
+  await sharp(faviconSvg,{density:288}).resize(size,size).png({compressionLevel:9}).toFile(path.resolve("public",name));
+}));
+console.log("Generated SVG-based favicon PNGs at 16, 32 and 180 pixels");
+
 const images=JSON.parse(await fs.readFile(new URL("../src/lib/featured-sources.json",import.meta.url),"utf-8"));
 const target=path.resolve("public/images/featured");
 await fs.mkdir(target,{recursive:true});

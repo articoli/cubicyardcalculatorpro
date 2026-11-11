@@ -9,6 +9,10 @@ export const metadata: Metadata = {
  title:{default:"Cubic Yard Calculator | Concrete, Gravel, Mulch & More",template:"%s"},
  description:SITE.description,
  applicationName:SITE.name,
+ icons:{
+  icon:[{url:"/favicon.svg",type:"image/svg+xml",sizes:"any"},{url:"/favicon-32x32.png",type:"image/png",sizes:"32x32"},{url:"/favicon-16x16.png",type:"image/png",sizes:"16x16"}],
+  apple:[{url:"/apple-touch-icon.png",type:"image/png",sizes:"180x180"}],
+ },
  alternates:{canonical:"/"},
  openGraph:{type:"website",siteName:SITE.name,url:SITE.url,title:"Cubic Yard Calculator Pro",description:SITE.description,locale:"en_US"},
  twitter:{card:"summary_large_image"},

@@ -27,6 +27,11 @@ jobs:
           test -f out/index.html
           test -f out/sitemap.xml
           test -f out/robots.txt
+          test -f out/favicon.svg
+          test -f out/favicon-16x16.png
+          test -f out/favicon-32x32.png
+          test -f out/apple-touch-icon.png
+          grep -q 'favicon.svg' out/index.html
           test -f out/images/featured/home.webp
           test -f out/images/featured/guides.webp
           test -f out/images/featured/contact.webp

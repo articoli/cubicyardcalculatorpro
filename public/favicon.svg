@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Cubic Yard Calculator Pro cube icon">
+  <rect width="64" height="64" rx="14" fill="#113A42"/>
+  <path d="M32 12.5 50 23 32 33.5 14 23Z" fill="#B8F1D9"/>
+  <path d="M14 23 32 33.5 32 51.5 14 41Z" fill="#6FCEB4"/>
+  <path d="M50 23 32 33.5 32 51.5 50 41Z" fill="#2BA78F"/>
+  <path d="M32 12.5 50 23V41L32 51.5 14 41V23L32 12.5ZM14 23 32 33.5 50 23M32 33.5V51.5" fill="none" stroke="#E8FFF5" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
