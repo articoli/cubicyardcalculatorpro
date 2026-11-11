@@ -17,28 +17,28 @@ export const pages:PageData[]=[
  type:"conversion",mode:"feet",intro:"Convert a volume measured in cubic feet into cubic yards using the exact relationship 1 cubic yard = 27 cubic feet. This is useful when your dimensions or supplier specifications use different units.",keyFact:"1 cubic yard = exactly 27 cubic feet.",
  sections:[],
  faqs:[{"question":"Is a cubic yard larger than a cubic foot?","answer":"Yes. One cubic yard contains 27 cubic feet."},{"question":"Does the conversion change for gravel or concrete?","answer":"No. Volume conversion is the same for every material; only weight-to-volume conversion depends on density."},{"question":"How do I convert 100 cubic feet to cubic yards?","answer":"Divide 100 by 27 to get approximately 3.7037 cubic yards. Keep the unrounded value for any later cost or bag-count calculation."},{"question":"How do I convert cubic yards back into cubic feet?","answer":"Multiply by 27. For instance, 2.5 cubic yards equals 67.5 cubic feet exactly."},{"question":"Can I use square feet in the cubic feet converter?","answer":"No. Square feet measure area, not volume. You must supply a depth before converting area into cubic yards."}]
-}
+},
 {
  slug:"square-feet-to-cubic-yards",title:"Square Feet to Cubic Yards Calculator | Area + Depth",h1:"Square Feet to Cubic Yards Calculator",
  description:"Convert square feet and depth to cubic yards for mulch, gravel, soil and concrete. Enter your area and thickness to estimate volume.",
  type:"conversion",mode:"area",intro:"Square feet measure area, while cubic yards measure volume. To calculate cubic yards from square footage, you must also know how deep or thick the material will be.",keyFact:"Cubic yards = square feet × depth in inches ÷ 324.",
  sections:[],
  faqs:[{"question":"How many cubic yards is 1,000 square feet?","answer":"The depth determines the answer. At 3 inches deep, 1,000 square feet is approximately 9.26 cubic yards."},{"question":"Can square feet be converted directly to cubic yards?","answer":"No. You need a thickness or depth because area and volume are different kinds of measurements."},{"question":"How many cubic yards are needed for 500 square feet at 4 inches?","answer":"500 × 4 ÷ 324 = approximately 6.17 cubic yards of geometric volume, before any installation adjustments."},{"question":"What if different parts of my area have different depths?","answer":"Calculate each section independently using its actual area and depth, then add the unrounded volumes."},{"question":"Does the result equal the delivered amount of gravel or topsoil?","answer":"Not always. The tool returns the measured geometric layer volume. Loose delivery, settling or compaction may change the purchasing quantity."}]
-}
+},
 {
  slug:"cubic-yards-to-tons",title:"Cubic Yards to Tons Calculator | Material Weight Estimate",h1:"Cubic Yards to Tons Calculator",
  description:"Estimate US short tons from cubic yards with an adjustable material density. Compare gravel, sand, soil and other bulk materials.",
  type:"conversion",mode:"tons",intro:"Convert a bulk material volume in cubic yards into an approximate weight in US short tons. Unlike volume-to-volume conversions, the result depends on the material's bulk density.",keyFact:"Estimated US short tons = cubic yards × US short tons per cubic yard.",
  sections:[],
  faqs:[{"question":"How many tons of gravel are in a cubic yard?","answer":"It varies with aggregate type, gradation, moisture and compaction. Use your supplier's weight per cubic yard when ordering."},{"question":"Are these metric tons?","answer":"No. This tool uses US short tons (2,000 lb each)."},{"question":"How can I convert a density in lb/ft³ to US short tons/yd³?","answer":"Multiply lb/ft³ by 27 and divide by 2,000. For example, 100 lb/ft³ equals 1.35 US short tons per cubic yard."},{"question":"Are the calculator's tonnage results exact?","answer":"No. The arithmetic is exact for the input density, but real material bulk density depends on gradation, moisture and packing. Supplier data provides a more reliable estimate."},{"question":"Can I use a compacted density with loose truck volume?","answer":"Do not assume so. Use density and volume stated for the same material state."},{"question":"Are these metric tonnes?","answer":"No. This tool estimates US short tons of 2,000 pounds each."}]
-}
+},
 {
  slug:"cubic-meters-to-cubic-yards",title:"Cubic Meters to Cubic Yards Calculator | m³ to yd³",h1:"Cubic Meters to Cubic Yards Calculator",
  description:"Convert cubic meters to cubic yards and back using the exact unit relationship, with practical metric-to-US volume examples.",
  type:"conversion",mode:"meters",intro:"Convert cubic meters (m³) into cubic yards (yd³) when comparing metric drawings, quantities and US material orders. Both units measure volume, so no material density is needed.",keyFact:"1 cubic yard = 0.764554857984 cubic meters.",
  sections:[],
- faqs:[{"question":"Is a cubic meter bigger than a cubic yard?","answer":"Yes. One cubic meter is approximately 1.308 cubic yards."},{"question":"Can I convert m³ to yd³ without knowing the material?","answer":"Yes. This is purely a volume conversion."},{"question":"How many cubic yards are in one cubic meter?","answer":"One cubic meter is approximately 1.3079506193 cubic yards."},{"question":"How do I convert 5 m³ to yd³?","answer":"Divide 5 by 0.764554857984 to get approximately 6.54 cubic yards."},{"question":"Can I convert metric dimensions in millimeters?","answer":"First convert each linear dimension to meters. Multiply to get m³, then convert that volume to yd³."},{"question":"Does converting cubic meters into yards add any material allowance?","answer":"No. Unit conversion does not add waste, compaction or settling allowances."}]
-}
+ faqs:[{"question":"Can I convert m³ to yd³ without knowing the material?","answer":"Yes. This is purely a volume conversion."},{"question":"How many cubic yards are in one cubic meter?","answer":"One cubic meter is approximately 1.3079506193 cubic yards."},{"question":"How do I convert 5 m³ to yd³?","answer":"Divide 5 by 0.764554857984 to get approximately 6.54 cubic yards."},{"question":"Can I convert metric dimensions in millimeters?","answer":"First convert each linear dimension to meters. Multiply to get m³, then convert that volume to yd³."},{"question":"Does converting cubic meters into yards add any material allowance?","answer":"No. Unit conversion does not add waste, compaction or settling allowances."}]
+},
 {
   "slug": "concrete-cubic-yard-calculator",
   "title": "Concrete Cubic Yard Calculator | Slabs, Footings & Bag Yields",
