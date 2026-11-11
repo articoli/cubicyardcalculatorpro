@@ -96,5 +96,26 @@
     "sourcePage": "https://www.pexels.com/photo/36656998/",
     "alt": "Industrial dump truck in a construction material yard",
     "file": "/images/featured/material-delivery-planning-guide.webp"
+  },
+  {
+    "slug": "how-to-calculate-cubic-yards",
+    "source": "https://images.pexels.com/photos/5493676/pexels-photo-5493676.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    "sourcePage": "https://www.pexels.com/photo/5493676/",
+    "alt": "Builder measuring a construction area with a tape and pencil",
+    "file": "/images/featured/how-to-calculate-cubic-yards.webp"
+  },
+  {
+    "slug": "what-is-a-cubic-yard",
+    "source": "https://images.pexels.com/photos/32254873/pexels-photo-32254873/free-photo-of-wheelbarrow-filled-with-soil-in-garden-setting.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    "sourcePage": "https://www.pexels.com/photo/32254873/",
+    "alt": "Wheelbarrow filled with garden soil representing a bulk cubic-yard quantity",
+    "file": "/images/featured/what-is-a-cubic-yard.webp"
+  },
+  {
+    "slug": "cubic-yard-coverage-chart",
+    "source": "https://images.pexels.com/photos/17312060/pexels-photo-17312060.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    "sourcePage": "https://www.pexels.com/photo/17312060/",
+    "alt": "Gravel garden path illustrating how material volume covers an area",
+    "file": "/images/featured/cubic-yard-coverage-chart.webp"
   }
 ]
