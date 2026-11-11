@@ -14,7 +14,10 @@ async function optimize(bytes){
    if(output.length<=100*1024)break;
  }
  if(output.length>100*1024){
-   output=await sharp(bytes).rotate().resize(960,540,{fit:"cover",position:"attention"}).webp({quality:51,effort:5}).toBuffer();
+   for(const width of [960,880,800]){
+     output=await sharp(bytes).rotate().resize(width,Math.round(width*9/16),{fit:"cover",position:"attention"}).webp({quality:width===960?51:47,effort:5}).toBuffer();
+     if(output.length<=100*1024)break;
+   }
  }
  return output;
 }
