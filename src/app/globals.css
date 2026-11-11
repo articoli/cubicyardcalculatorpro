@@ -222,3 +222,14 @@ a{color:#087366;text-decoration:none}a:hover{text-decoration:underline}h1,h2,h3,
 .expansion-card .guide-card-body p{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 @media(max-width:760px){.extended-calc-columns{grid-template-columns:1fr}.extended-calc-heading{padding:22px}.extended-calc-inputs,.extended-calc-output{padding:22px}.expansion-toc>div{grid-template-columns:1fr}}
 @media(max-width:500px){.extended-calc-inputs{grid-template-columns:1fr}.extended-calc-heading .calc-status{display:none}.extended-result-main{font-size:2.1rem}}
+
+
+/* Contact support and expanded guide index */
+.contact-main{max-width:930px;padding-top:48px;padding-bottom:100px}
+.contact-main section{border-bottom:1px solid #dbe8e2;padding:0 0 34px;margin:0 0 34px}
+.contact-main h2{font-size:1.7rem}
+.contact-main p{line-height:1.9;font-size:.95rem;max-width:800px}
+.contact-action{display:inline-flex;padding:13px 20px;background:#13806f;color:white;border-radius:9px;font-weight:800;margin:6px 0 18px}
+.contact-action:hover{text-decoration:none;background:#0a675b}
+.contact-warning{font-size:.82rem!important;background:#f3f7f4;border-left:3px solid #6ea58e;border-radius:0 8px 8px 0;padding:12px 15px}
+.guide-category-section>p{font-size:.88rem;max-width:700px}

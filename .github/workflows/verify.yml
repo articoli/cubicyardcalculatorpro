@@ -28,6 +28,11 @@ jobs:
           test -f out/sitemap.xml
           test -f out/robots.txt
           test -f out/guides/index.html
+          test -f out/contact/index.html
+          for slug in cubic-yards-to-bags cubic-yard-cost-calculator cubic-inches-to-cubic-yards sand-cubic-yard-calculator landscape-rock-cubic-yard-calculator compost-cubic-yard-calculator excavation-cubic-yard-calculator dump-truck-load-calculator how-much-does-a-cubic-yard-weigh bulk-vs-bagged-materials how-to-measure-irregular-areas cubic-yard-vs-square-yard soil-swell-and-compaction material-delivery-planning-guide; do
+            test -f "out/$slug/index.html"
+            test -f "out/images/featured/$slug.webp"
+          done
           test -f out/privacy-policy/index.html
           test -f out/terms-of-use/index.html
           test -f out/disclaimer/index.html
