@@ -22,7 +22,7 @@ jobs:
         run: npm run typecheck
       - name: Build static site
         run: npx next build
-      - name: Verify generated files
+      - name: Audit primary calculator content\n        run: node scripts/audit-core-pages.mjs\n      - name: Verify generated files
         run: |
           test -f out/index.html
           test -f out/sitemap.xml
