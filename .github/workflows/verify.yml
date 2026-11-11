@@ -21,7 +21,7 @@ jobs:
       - name: Type-check
         run: npm run typecheck
       - name: Build static site
-        run: npm run build
+        run: npx next build
       - name: Verify generated files
         run: |
           test -f out/index.html
