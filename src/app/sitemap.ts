@@ -1,3 +1,4 @@
+export const dynamic = "force-static";
 import type { MetadataRoute } from "next";
 import { pages } from "@/lib/pages";
 import { SITE } from "@/lib/site";
