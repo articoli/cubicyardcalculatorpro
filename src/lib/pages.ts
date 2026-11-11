@@ -232,7 +232,7 @@ export const pages:PageData[]=[
       "answer": "No. It estimates geometric volume. Compressive strength, reinforcement, curing, footing design and local code requirements must be determined separately from qualified project guidance."
     }
   ]
-}
+},
 {
   "slug": "gravel-cubic-yard-calculator",
   "title": "Gravel Cubic Yard Calculator | Driveways, Tons & Depth",
@@ -384,7 +384,7 @@ export const pages:PageData[]=[
       "answer": "No. Drainage depends on grading, subgrade, aggregate gradation and site design. A deeper layer of the wrong product may not correct a drainage problem."
     }
   ]
-}
+},
 {
   "slug": "mulch-cubic-yard-calculator",
   "title": "Mulch Cubic Yard Calculator | Beds, Bags & Coverage",
@@ -561,7 +561,7 @@ export const pages:PageData[]=[
       "answer": "It calculates the full measured area. Subtract any meaningful areas that will not receive mulch, such as a central paver area or a mulch-free tree ring interior."
     }
   ]
-}
+},
 {
   "slug": "topsoil-cubic-yard-calculator",
   "title": "Topsoil Cubic Yard Calculator | Lawn & Garden Soil",
@@ -711,7 +711,7 @@ export const pages:PageData[]=[
       "answer": "Multiply inside length by inside width by the depth of soil you intend to add. Convert cubic feet to cubic yards by dividing by 27, and account for any existing fill or other materials occupying space."
     }
   ]
-}
+},
 {
   "slug": "fill-dirt-cubic-yard-calculator",
   "title": "Fill Dirt Cubic Yard Calculator | Backfill & Earthwork",
@@ -885,7 +885,7 @@ export const pages:PageData[]=[
       "answer": "No. It computes a preliminary volume. Structural earthwork may need engineered fill, geotechnical testing, appropriate compaction, grading plans and drainage design."
     }
   ]
-}
+},
 {
  slug:"how-to-calculate-cubic-yards",title:"How to Calculate Cubic Yards: Formulas and Examples",h1:"How to Calculate Cubic Yards",
  description:"Learn the cubic yard formula using feet, inches, area and depth. Follow clear worked examples for common home and landscape projects.",
