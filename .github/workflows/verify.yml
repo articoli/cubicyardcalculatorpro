@@ -27,6 +27,10 @@ jobs:
       - name: Verify generated files
         run: |
           test -f out/index.html
+          grep -q 'name="google-site-verification"' out/index.html
+          grep -q 'eM680CswFA2LdOOmmyARNVIiVS-ihjKfUkVwaHpZQac' out/index.html
+          grep -q 'GTM-W8X7R5CQ' out/index.html
+          grep -q 'GTM-W8X7R5CQ' out/concrete-cubic-yard-calculator/index.html
           test -f out/sitemap.xml
           test -f out/robots.txt
           test -f out/favicon.svg
