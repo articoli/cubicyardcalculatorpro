@@ -1,4 +1,4 @@
-export type ConversionExtra={kind:string;summary:string;sections:{heading:string;paragraphs:string[];table?:{caption:string;headers:string[];rows:string[][]}}[]};
+export type ConversionExtra={kind:string;summary:string;sections:{heading:string;paragraphs:string[];table?:{caption:string;headers:string[];rows:(string|number)[][]}}[]};
 export const conversionArticles:Record<string,ConversionExtra>={
   "cubic-feet-to-cubic-yards": {
     "kind": "Exact volume conversion",
