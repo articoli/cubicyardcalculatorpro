@@ -8,7 +8,7 @@ import {GuideFeature,GuideArticle,ConversionEditorial} from "@/components/Editor
 import {NewFeature,ExpansionArticle,featuredImage} from "@/components/ExpansionEditorial";
 import {guideArticles} from "@/lib/guide-content";
 import {expansionArticles} from "@/lib/expansion-articles";
-import {Breadcrumbs,GuideBody,HubLinks} from "@/components/Sections";
+import {Breadcrumbs,GuideBody,HubLinks,FAQ} from "@/components/Sections";
 import {pageMap,pages} from "@/lib/pages";
 import {SITE} from "@/lib/site";
 
@@ -64,9 +64,9 @@ export default async function TopicPage({params}:{params:Promise<{slug:string}>}
     {!newArticle&&!existingGuide&&photo&&<NewFeature slug={slug} loading="lazy"/>}
     {newArticle?<><NewFeature slug={slug} loading="lazy"/><ExpansionArticle slug={slug}/></>:<>
       {existingGuide&&<><GuideFeature slug={slug}/><GuideArticle page={p}/></>}
-      {p.type==="conversion"&&<ConversionEditorial slug={slug}/>}
+      {p.type==="conversion"&&<><ConversionEditorial slug={slug}/><FAQ items={p.faqs}/></>}
       {p.type==="material"&&<MaterialEditorial slug={slug}/>}
-      {!existingGuide&&<GuideBody page={p}/>}
+      {!existingGuide&&p.type!=="conversion"&&<GuideBody page={p}/>}
     </>}
     <div className="next-step"><strong>Need another calculation?</strong><p>Use the <Link href="/">main cubic yard calculator</Link>, or explore <Link href="/guides/">our guides and project-planning resources</Link>.</p></div>
     <HubLinks current={slug}/>

@@ -2,7 +2,7 @@ export type ConversionExtra={kind:string;summary:string;sections:{heading:string
 export const conversionArticles:Record<string,ConversionExtra>={
   "cubic-feet-to-cubic-yards": {
     "kind": "Exact volume conversion",
-    "summary": "Cubic feet and cubic yards both describe volume; the conversion factor is exact and does not depend on the material.",
+    "summary": "Exact volume conversion: divide cubic feet by 27 for cubic yards, or multiply cubic yards by 27 for cubic feet. This conversion does not require material density.",
     "sections": [
       {
         "heading": "When is ft³ to yd³ useful?",
@@ -62,12 +62,33 @@ export const conversionArticles:Record<string,ConversionExtra>={
         "paragraphs": [
           "Do not confuse cubic feet (ft³) with square feet (ft²). A project with only 200 square feet of area cannot be converted to cubic yards until the depth is known. Do not confuse a linear foot or a length in feet with a cubic-foot volume. Finally, do not apply a tons-per-yard factor to this exact unit conversion; weight is a separate material-dependent estimate."
         ]
+      },
+      {
+        "heading": "What to do if your layer thickness is in inches",
+        "paragraphs": [
+          "If a rectangular area is measured in feet and the fill thickness in inches, first calculate cubic feet as length in feet × width in feet × thickness in inches ÷ 12. A 20 × 10-foot area at 4 inches deep contains 66.67 cubic feet. Dividing the unrounded cubic-foot value by 27 produces about 2.47 cubic yards. The combined shortcut for this case is length × width × depth in inches ÷ 324.",
+          "Avoid dividing square footage by 27. An area in square feet is not yet a volume. Use the [[square feet to cubic yards calculator|/square-feet-to-cubic-yards/]] when you have a measured area and need to add thickness."
+        ]
+      },
+      {
+        "heading": "Compare bulk yards with cubic-foot bags",
+        "paragraphs": [
+          "Mulch, compost and potting mixes may be packaged by cubic-foot volume. If a project requires 54 cubic feet of mulch, that is precisely 2 cubic yards and the same labeled volume as 27 two-cubic-foot bags. Bag purchasing requires rounding to whole packages only after calculating the full quantity.",
+          "Concrete is different: packages are often labeled in pounds, and their final mixed yield in cubic feet varies by product. Confirm the published yield of the particular mix before determining how many bags make a cubic-yard order. Use the [[cubic yards to bags calculator|/cubic-yards-to-bags/]] for package conversions."
+        ]
+      },
+      {
+        "heading": "Precision and the right next step",
+        "paragraphs": [
+          "A volume smaller than one cubic foot can be a tiny fraction of a yard. For example, half a cubic foot divided by 27 is approximately 0.0185185 cubic yard. Keep intermediate precision and do not round small quantities to zero before comparing packages or supplier minimums.",
+          "An exact volume conversion does not predict a material's mass, settlement, or compacted yield. The [[cubic yards to tons calculator|/cubic-yards-to-tons/]] requires a product-specific density if you need weight instead of volume."
+        ]
       }
     ]
   },
   "square-feet-to-cubic-yards": {
     "kind": "Area + thickness conversion",
-    "summary": "Square feet measure flat area. To calculate cubic yards from them, you must supply a material depth or thickness.",
+    "summary": "Area-to-volume calculation: cubic yards = square feet × depth in inches ÷ 324. Depth is essential; square feet alone cannot be converted to cubic yards.",
     "sections": [
       {
         "heading": "Why square feet alone cannot become cubic yards",
@@ -134,12 +155,33 @@ export const conversionArticles:Record<string,ConversionExtra>={
         "paragraphs": [
           "Subtract any meaningful regions that do not receive material. If the footprint is irregular, divide it into measurable shapes. Always label depth units; entering 4 feet instead of 4 inches increases the result twelvefold. If the material is quoted by ton, calculate volume first and then apply the relevant bulk density using the [[cubic yards to tons calculator|/cubic-yards-to-tons/]]."
         ]
+      },
+      {
+        "heading": "Worked example with different depths on one site",
+        "paragraphs": [
+          "Suppose a 350-square-foot project includes 200 square feet at 2 inches and 150 square feet at 4 inches. The two volumes are 200 × 2 ÷ 324 ≈ 1.23 yd³ and 150 × 4 ÷ 324 ≈ 1.85 yd³. Add the unrounded values for a total of about 3.09 cubic yards. Applying only a 2-inch thickness to the entire area would underestimate the deeper zone.",
+          "A circular or curved footprint should be measured before applying thickness. For circles, use π × radius²; for irregular borders, break the project into measured sections and exclude areas that receive no material. The [[irregular area measurement guide|/how-to-measure-irregular-areas/]] explains those steps."
+        ]
+      },
+      {
+        "heading": "A practical depth and measurement checklist",
+        "paragraphs": [
+          "Check whether the specified depth is in inches or feet; 4 inches is one-third foot, not four feet. Measure the actual surface to be covered rather than the overall lot. Where the thickness is irregular or the grade changes, divide the project into sections so that a single average does not hide important variations.",
+          "Material selection is separate from this calculation. Mulch depth depends on the existing layer and plants; a gravel base may be measured at a compacted finished depth; and concrete thickness must follow project requirements. Use the [[mulch calculator|/mulch-cubic-yard-calculator/]], [[gravel calculator|/gravel-cubic-yard-calculator/]], or [[concrete calculator|/concrete-cubic-yard-calculator/]] to plan those specific projects."
+        ]
+      },
+      {
+        "heading": "When the mathematical volume differs from an order",
+        "paragraphs": [
+          "The result describes a geometric space at the selected thickness. Loose topsoil can settle, crushed aggregate can compact, and suppliers may have minimum order increments. Do not treat a generic additional percentage as a validated density or compaction factor.",
+          "If you already know a quantity in cubic yards and want to see how many square feet it covers at a chosen depth, use the [[cubic yard coverage chart|/cubic-yard-coverage-chart/]]. If a stone supplier quotes by short ton, calculate volume first, then convert using a relevant bulk density."
+        ]
       }
     ]
   },
   "cubic-yards-to-tons": {
     "kind": "Material density conversion",
-    "summary": "Unlike exact volume conversions, converting cubic yards to US short tons requires a material-specific bulk density.",
+    "summary": "Weight estimate: multiply cubic yards by the chosen material's bulk density in US short tons per cubic yard. Always match the density to its loose or compacted volume state.",
     "sections": [
       {
         "heading": "The formula for converting cubic yards to US short tons",
@@ -202,12 +244,33 @@ export const conversionArticles:Record<string,ConversionExtra>={
           "If a supplier specifies 1.47 US short tons per loose cubic yard for a product, 6 loose cubic yards are estimated at 6 × 1.47 = 8.82 short tons. This is a hypothetical supplier figure for demonstrating the formula. The result should not be used for a different product or compacted volume without verification.",
           "When ordering, confirm density, billing units, legal truck payload and delivery charges. For a driveway, use the [[gravel calculator|/gravel-cubic-yard-calculator/]] to determine the geometric layer quantity before planning tonnage."
         ]
+      },
+      {
+        "heading": "How to use a density quoted in lb per cubic foot",
+        "paragraphs": [
+          "A supplier may report bulk density as pounds per cubic foot (lb/ft³). To convert this factor into US short tons per cubic yard, multiply by 27 ft³ per yd³ and divide by 2,000 pounds per US short ton. For example, 110 lb/ft³ × 27 ÷ 2,000 = 1.485 US short tons per yard. A matching volume of four cubic yards would weigh about 5.94 short tons.",
+          "These calculations depend on the source density. A density for dry compacted material cannot automatically be used with a loose wet truck quantity. Where uncertainty is important, obtain a weigh ticket or supplier specification."
+        ]
+      },
+      {
+        "heading": "Loose, bank and compacted volume are not equivalent",
+        "paragraphs": [
+          "For soil and aggregate, bulk density reflects the volume of particles plus voids. Excavated earth can occupy more bulk space in a loose truckload than in undisturbed ground, and compaction can reduce void volume. A tons-per-cubic-yard estimate is meaningful only when the density and cubic yards refer to the same material state.",
+          "For earthwork projects, understand the difference between bank, loose and compacted volumes using the [[soil swell and compaction guide|/soil-swell-and-compaction/]]. For geometric driveway quantities, use the [[gravel calculator|/gravel-cubic-yard-calculator/]] before estimating tonnage."
+        ]
+      },
+      {
+        "heading": "Do not confuse short tons with metric tonnes or truck payload",
+        "paragraphs": [
+          "One US short ton equals 2,000 pounds. One metric tonne equals 1,000 kilograms (about 2,204.62 pounds), and a British long ton is 2,240 pounds. Make sure the supplier quote and your calculation use the same unit before comparing prices.",
+          "A computed weight does not establish what any truck can legally carry. Vehicle payload, axle weights, site access and road limits are separate requirements. Use the [[dump truck load calculator|/dump-truck-load-calculator/]] for a planning scenario, not a transport certification."
+        ]
       }
     ]
   },
   "cubic-meters-to-cubic-yards": {
     "kind": "Metric–US volume conversion",
-    "summary": "The cubic meter to cubic yard relationship is fixed by the international yard definition and does not require material density.",
+    "summary": "Exact metric conversion: 1 cubic yard = 0.764554857984 cubic meter. Divide m³ by that number to get yd³, or multiply yd³ by that number to get m³.",
     "sections": [
       {
         "heading": "Exact cubic meter to cubic yard relationship",
@@ -267,6 +330,27 @@ export const conversionArticles:Record<string,ConversionExtra>={
         "paragraphs": [
           "Converting 4.5 m³ to yd³ changes the unit label and number, but not the physical volume of concrete, gravel or soil. If the same project also needs compaction or settlement adjustments, apply them separately based on the correct material specifications.",
           "NIST publishes definitions of the international yard and related conversion factors. See our [[calculation methodology|/calculation-methodology/]] for the exact relationship used by the calculator."
+        ]
+      },
+      {
+        "heading": "Worked example using metric dimensions",
+        "paragraphs": [
+          "A measured slab of 5 meters by 3 meters at 100 millimeters deep has a thickness of 0.1 meter. Its volume is 5 × 3 × 0.1 = 1.5 cubic meters. Divide by 0.764554857984 for approximately 1.96 cubic yards. The important step is converting each linear dimension into meters before calculating volume.",
+          "A thickness entered as 100 meters instead of 100 millimeters would overestimate the volume by a factor of 1,000. Check that m, cm and mm have not been mixed in the same multiplication. The exact international yard definition is available from [[NIST|https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors]]."
+        ]
+      },
+      {
+        "heading": "What changes when a supplier uses metric drawings?",
+        "paragraphs": [
+          "Converting an estimated 4.5 m³ into about 5.89 yd³ changes only the measurement unit, not the material quantity in physical space. Supplier rounding, concrete form variations, aggregate compaction and soil settlement remain separate from this exact unit relationship.",
+          "The reverse operation is equally useful: if a US supplier quotes 3 yd³, multiplying by 0.764554857984 gives approximately 2.29366 m³. Use the reverse direction in the calculator rather than dividing by the wrong conversion factor."
+        ]
+      },
+      {
+        "heading": "Cubic meters are not metric tonnes",
+        "paragraphs": [
+          "A cubic meter (m³) is a unit of volume. A metric tonne is a unit of mass. Converting between them requires density; there is no universal rule that one m³ of soil, sand or stone equals one metric tonne. Both cubic meters and cubic yards can be converted without the material's density because they measure the same kind of quantity.",
+          "If you need a US short-ton weight estimate after converting the volume, visit the [[cubic yards to tons calculator|/cubic-yards-to-tons/]] and enter a density that applies to your product."
         ]
       }
     ]
