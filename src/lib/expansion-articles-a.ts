@@ -89,6 +89,20 @@ export const articlesA:Record<string,ExpansionArticle>={
           "Do not count a bag's advertised pounds as cubic feet. Never round fractional cubic yards down because the result looks small. Verify whether the package contains ready-to-spread material or a product that expands, mixes or compacts during use. Check whether the supplier prices volume as loose cubic yards or a finished yield.",
           "Review the packaging before purchasing: two products may be sold in similarly sized bags but have different contents or yields. The calculator assumes the entered volume per bag is trustworthy and that all bags contain the same amount."
         ]
+      },
+      {
+        "heading": "Worked example: combining several garden beds into one bag order",
+        "paragraphs": [
+          "Suppose three planting beds need the same bagged mulch: one is 10 × 8 feet at 2 inches, another is 6 × 5 feet at 3 inches, and a third is 12 × 4 feet at 2 inches. Their separate cubic-foot volumes are 13.33, 7.5 and 8 cubic feet, totaling 28.83 cubic feet. The bulk equivalent is 28.83 ÷ 27 ≈ 1.07 cubic yards.",
+          "With 2-cubic-foot packages, 28.83 ÷ 2 = 14.42, so the purchase is 15 whole bags. If you rounded each bed's bags separately, you would buy 7 + 4 + 4 = 15 in this case, but the same method can produce a larger excess for other combinations. Summing first is the consistent approach. Keep beds with different products or bag yields as separate orders."
+        ]
+      },
+      {
+        "heading": "When a bag count should not be treated as guaranteed coverage",
+        "paragraphs": [
+          "A manufacturer may label packaged soil, mulch or compost by measured volume, but spreading over an uneven surface can produce a different final thickness than the geometric layer shown in a calculator. For concrete, dry powder volume is particularly misleading because the actual mixed yield is the relevant figure.",
+          "If a project needs a compacted aggregate base, a bag's loose cubic-foot label does not demonstrate the installed compacted volume. Check supplier directions or project yield data before buying. When uncertainty is material, purchase quantities should be confirmed with a knowledgeable supplier rather than relying on a round-number bag conversion."
+        ]
       }
     ],
     "faqs": [
@@ -218,6 +232,20 @@ export const articlesA:Record<string,ExpansionArticle>={
           "Before approving a quote, write down the product name, exact quantity, unit, grade or specification, price, tax assumptions and delivery conditions. Confirm whether a load can be placed near the work area and whether access restrictions could require additional handling.",
           "Keep labor and equipment rental separate from the cost of the delivered material. A concrete slab's installed price cannot be calculated from raw concrete cubic-yard cost alone, because forms, reinforcement, base preparation, placement and finishing can be substantial parts of the work."
         ]
+      },
+      {
+        "heading": "How to compare a minimum order with your measured project",
+        "paragraphs": [
+          "Suppose your project needs 2.4 cubic yards but the cheapest quoted supplier has a minimum purchase of 3 cubic yards. At an illustrative $55 per yard, the purchased-material subtotal is $165, not $132. If delivery is $70, the quote becomes $235 before taxes. The extra 0.6 cubic yard is a purchasing increment, not a material-waste allowance.",
+          "Another supplier could allow 2.5 yards at $60 per yard with a $60 delivery fee, totaling $210 before tax. Although its unit price is higher, the second delivered quote is cheaper for the same job. Record the minimum, ordered quantity and expected leftover material separately to see the difference."
+        ]
+      },
+      {
+        "heading": "Material quality and quote scope can outweigh a small price difference",
+        "paragraphs": [
+          "Two providers may quote different products under similar names. Screened topsoil, planting mixes and common fill dirt are not automatically interchangeable; drainage stone and dense-graded crushed base are specified for different uses. A price comparison is only meaningful when the offered materials suit the same project requirement.",
+          "Check whether a supplier's amount includes spreading, placing, compaction, removal of unsuitable material or only the bulk delivery. A quote for installed concrete includes very different labor and preparation costs from a quote for ready-mix material. The calculator deliberately keeps the material subtotal and delivery components visible instead of pretending to price a complete construction service."
+        ]
       }
     ],
     "faqs": [
@@ -346,6 +374,27 @@ export const articlesA:Record<string,ExpansionArticle>={
           "Verify that all three dimensions were actually measured in inches, not a mixture of inches and feet. Multiply three linear dimensions to obtain volume; dividing a linear measurement alone by 46,656 does not give a valid cubic-yard calculation.",
           "The exact relationship follows the international yard length definition in the [[NIST Guide to SI|https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors]]. The calculator does not estimate the suitability, weight or yield of any particular material."
         ]
+      },
+      {
+        "heading": "Circular volumes measured entirely in inches",
+        "paragraphs": [
+          "A round cylindrical cavity can be measured in inches without converting every dimension to feet. Volume in cubic inches = π × radius² × depth, with both radius and depth in inches. Divide the resulting in³ value by 46,656 to obtain cubic yards.",
+          "For a 12-inch-diameter cylinder that is 18 inches deep, the radius is 6 inches. The volume is π × 6² × 18 ≈ 2,035.75 cubic inches. Dividing by 46,656 gives approximately 0.04363 cubic yard. If many identical cylindrical holes are being filled, multiply the per-hole volume by the count before converting and rounding."
+        ]
+      },
+      {
+        "heading": "Checking cubic inches against cubic feet and liters",
+        "paragraphs": [
+          "One cubic foot contains exactly 12 × 12 × 12 = 1,728 cubic inches. Since one cubic yard contains 27 cubic feet, multiplying 1,728 by 27 gives 46,656 cubic inches. This dimensional derivation is a quick accuracy check if a conversion result looks suspicious.",
+          "In metric units, one cubic inch is exactly 0.016387064 liter under the international inch definition of 2.54 centimeters. Multiplying 46,656 by that factor yields 764.554857984 liters, identical to the cubic-yard-to-liter relationship. No material type or density information is needed for either conversion."
+        ]
+      },
+      {
+        "heading": "Avoid precision loss in small molds and repair pockets",
+        "paragraphs": [
+          "If a cavity has a calculated volume of 500 cubic inches, its cubic-yard equivalent is approximately 0.01072 yd³. Rounding that value to two decimal places gives 0.01, which is acceptable for some displays but can be misleading if reused for a purchase calculation. Keep the original cubic inches or full calculated precision until the final step.",
+          "For material purchases, convert the final volume into the product's actual package yield. A small mortar or concrete patch may be easier to plan in cubic feet or bags than in hundredths of a bulk cubic yard. The [[bag conversion tool|/cubic-yards-to-bags/]] is most useful once the package's yield is known."
+        ]
       }
     ],
     "faqs": [
@@ -468,6 +517,20 @@ export const articlesA:Record<string,ExpansionArticle>={
         "paragraphs": [
           "Rounding the finished sand depth up or down can change the order appreciably across a broad surface. Likewise, treating sand bedding as a substitute for compacted base can undermine a paver installation. Measure each layer independently and confirm the specified materials.",
           "Uneven subgrade, moisture and compaction may change the delivered versus finished volume. The site-specific information is more valuable than a generic 10% wastage factor. The [[main cubic yard calculator|/]] can be used to check the basic geometric formula without a material assumption."
+        ]
+      },
+      {
+        "heading": "Why sand for paving should be estimated in separate layers",
+        "paragraphs": [
+          "A paved area may require compacted aggregate base, bedding sand and jointing sand. These are different materials with different quantities. If a 240-square-foot patio specifies one inch of bedding sand, its bedding layer is about 0.74 cubic yard. That number does not include the crushed aggregate beneath the bedding or the product used to fill joints between pavers.",
+          "Estimate the base volume using its own dimensions and material specification. Jointing-sand quantity depends on paver size, joint width, joint depth and the product instructions; a simple area-and-depth layer calculation may not represent those voids accurately. Separating the estimates also makes supplier and cost comparisons clearer."
+        ]
+      },
+      {
+        "heading": "Moisture and sand handling before delivery",
+        "paragraphs": [
+          "Sand delivered at different moisture contents can differ in bulk weight and how it spreads. A wet mound may clump, and a very dry fine sand may be difficult to manage in windy conditions. Supplier density values should identify whether they refer to the same material state as the quoted volume.",
+          "Plan a clean drop location where the sand is less likely to mix with soil or other aggregates. Ask whether a small load can be supplied in bulk bags or smaller sacks if driveway access is limited. Recording the product, area, thickness and expected material state helps prevent ordering the right volume of the wrong sand."
         ]
       }
     ],

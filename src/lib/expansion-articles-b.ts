@@ -97,6 +97,20 @@ export const articlesB:Record<string,ExpansionArticle>={
           "Common errors include confusing stone weight with volume, measuring a curved bed as a full rectangle, subtracting no unfilled space, selecting a universal depth and assuming a layer of large rock behaves like pea gravel. Avoid treating loose supplier weight as a guaranteed finished coverage figure.",
           "The most reliable order starts with the exact rock product, intended finished geometry and supplier density or volume definition. Record any material allowance separately and confirm how the supplier rounds orders."
         ]
+      },
+      {
+        "heading": "Dry-creek beds need a section-by-section volume takeoff",
+        "paragraphs": [
+          "A decorative dry creek may have a shallow center channel, deeper pockets and wider turning sections. Treating the longest width and average depth as one rectangle can overstate or understate the actual rock layer. Divide the channel into short measured runs, record each run's average width and designed depth, then calculate cubic yards for each run.",
+          "Some dry-creek designs contain large accent boulders surrounded by smaller stone. Those elements may be quoted by individual piece or weight, while surrounding loose rock is estimated by bulk layer volume. Do not calculate a boulder's purchase quantity as if it were interchangeable with small decorative rock. Drainage design and outlet provisions should be evaluated separately."
+        ]
+      },
+      {
+        "heading": "How stone size affects the finished appearance",
+        "paragraphs": [
+          "Two rock beds spread to the same geometric thickness may look different because of stone size, grading and surface texture. Larger rounded stone can leave visible gaps or rise above the intended layer, while smaller angular chip can make a more even surface. The calculator cannot predict the final appearance from volume alone.",
+          "Ask for a sample, verify whether the yard's advertised stone size is nominal or a range, and check how the product will be contained at edges. Photographing a sample area before buying the entire order can help confirm the chosen depth and color. Avoid translating that visual preference into an unsupported standard density."
+        ]
       }
     ],
     "faqs": [
@@ -239,6 +253,20 @@ export const articlesB:Record<string,ExpansionArticle>={
           "Measure the area, identify whether it is a new or established bed, review the soil and crop needs, choose a suitable compost product, and select the application depth. Calculate bulk cubic yards, convert to bag count if necessary and verify delivery or pickup logistics.",
           "Do not apply a default waste or compaction percentage from a concrete or gravel calculator. Compost settles and is incorporated differently. For a simple volume-only check, the [[main cubic yard calculator|/]] is available without assigning a weight."
         ]
+      },
+      {
+        "heading": "Incorporation depth is not the amount of compost being purchased",
+        "paragraphs": [
+          "Extension guidance may recommend spreading a measured compost layer and then mixing it through a deeper zone of existing soil. For example, an amendment applied two inches thick may be incorporated into the upper several inches of soil. The compost quantity is based on the two-inch application layer, not the entire soil depth that will be mixed.",
+          "Confusing incorporation depth with purchase depth can produce a major over-order. A 200-square-foot area with a 2-inch compost layer requires about 1.23 cubic yards. Calculating an 8-inch depth instead would create a 4.94-yard estimate, even though the additional volume represents existing soil that is not being purchased."
+        ]
+      },
+      {
+        "heading": "Questions to ask about bulk compost quality",
+        "paragraphs": [
+          "A bulk supplier can often explain its feedstock, screening process, maturity, moisture and intended uses. Where available, ask for an analysis covering nutrients, soluble salts or other properties relevant to sensitive plants. A pleasant earthy appearance alone does not establish suitability for every crop or soil.",
+          "Compost is not a direct substitute for topsoil in structural grading or for a designed drainage layer. Choose the correct product for the project and calculate the intended amendment volume. For established gardens, reassess soil needs before applying an annual addition rather than assuming the previous year's amount should be repeated."
+        ]
       }
     ],
     "faqs": [
@@ -374,6 +402,20 @@ export const articlesB:Record<string,ExpansionArticle>={
         "paragraphs": [
           "Excavation introduces hazards from collapse, buried utilities, equipment and groundwater. Geometry alone does not establish safe entry, trench support, appropriate slopes or whether a permit is required. The site does not provide excavation safety procedures or substitute for trained supervision and applicable regulations.",
           "Record the shape, measured dimensions, source of any swell factor, expected earthwork material and haul units. For structural foundations, utility trenches or substantial grade changes, use approved drawings and competent site assessment."
+        ]
+      },
+      {
+        "heading": "Why stockpile appearance cannot replace surveyed cut volume",
+        "paragraphs": [
+          "A pile of excavated material has an irregular shape and contains voids. Estimating its volume from one height and diameter can be inaccurate, especially when the footprint is not conical or material is spread unevenly. For a known excavation, the measured bank cut and a valid swell factor usually provide a clearer starting point for hauling.",
+          "If a stockpile must be measured directly, use a suitable survey or volumetric method rather than an unverified visual guess. The calculator models a rectangular cut, not an irregular material mound. It should not be used to infer legal truck load weight from pile size."
+        ]
+      },
+      {
+        "heading": "Distinguish overbreak from the planned excavation geometry",
+        "paragraphs": [
+          "Overbreak is material removed beyond the planned excavation limits. Rock excavation, irregular ground, machine access and required safe slopes can change the actual cut shape. A design that calls for a narrow trench may require a larger excavation footprint in practice for safety or access, but those dimensions must come from the correct project plan.",
+          "Estimate the designed quantity and any measured or planned additional excavation separately. Do not add an arbitrary margin as a substitute for safe excavation design. For professional projects, actual payment quantities may be governed by the contract's measurement method rather than the apparent loose stockpile volume."
         ]
       }
     ],
@@ -513,6 +555,20 @@ export const articlesB:Record<string,ExpansionArticle>={
         "paragraphs": [
           "Before using the result, confirm material quantity in loose yards, the material bulk density, the truck's usable bed volume, legal payload and any axle or route restrictions. If you have only a tons-per-load statement, obtain a density before turning it into cubic yards. A large truck's nominal size alone is not enough.",
           "Use this tool for planning, not as a transportation compliance calculator. Real payload and permitted operation require actual vehicle records and applicable road rules. For practical logistics, read the [[bulk material delivery guide|/material-delivery-planning-guide/]]."
+        ]
+      },
+      {
+        "heading": "Why a load count can differ from the number of invoices",
+        "paragraphs": [
+          "A dispatch schedule may include partial loads, minimum charges or combined deliveries. A theoretical calculation that says three trips does not guarantee a supplier will invoice exactly three full truckloads. The supplier may round quantities, split a product into separate grades or operate smaller vehicles because of site access.",
+          "Ask whether the invoice is based on certified weight tickets, volume at loading, delivered cubic yards or each truck trip. Record the billing method alongside the estimate. A weight-based ticket may be more useful for dense aggregate, but converting the ticket back to volume still requires an appropriate density."
+        ]
+      },
+      {
+        "heading": "Moisture can change the limiting factor during a project",
+        "paragraphs": [
+          "An identical-looking truck bed filled with wetter soil may carry more total weight than it would with drier material. If the bulk density increases, the payload-limited usable cubic yards decrease even though the bed dimensions have not changed. This is why truck capacity is not a fixed universal number of cubic yards for all materials.",
+          "Check actual material state when scheduling repeat deliveries. The tool helps explore scenarios using editable density, but the hauler is responsible for verifying legal loading and appropriate equipment. Avoid treating a planning estimate as authority to exceed road or axle restrictions."
         ]
       }
     ],

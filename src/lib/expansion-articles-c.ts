@@ -103,6 +103,20 @@ export const articlesC:Record<string,ExpansionArticle>={
           "Ask for the actual material product, whether density includes moisture, the volume state, and the unit of measurement. Record how many cubic yards are needed and use the density that matches that quantity. If a contractor must haul the material, confirm payload and axle-weight limitations independently.",
           "Do not use density estimates to infer the suitability of soil for structural fill or the capacity of a building surface. Those are separate engineering questions. For truck scheduling, use the [[dump truck load calculator|/dump-truck-load-calculator/]] with a verified payload allowance."
         ]
+      },
+      {
+        "heading": "Converting a supplier's density sheet into an order weight",
+        "paragraphs": [
+          "Suppliers may express density in pounds per cubic foot instead of tons per cubic yard. Suppose the specification for a particular loose material states 112 lb/ft³. Multiply by 27 to obtain 3,024 pounds per cubic yard; divide by 2,000 to obtain 1.512 US short tons per cubic yard. For a measured loose delivery of 4.5 cubic yards, the estimated total weight is 6.804 US short tons.",
+          "Keep the density and volume in matching material states. If the 112 lb/ft³ value refers to compacted dry material while your 4.5 yards are loose wet delivery volume, the conversion needs different input data. A calculator cannot correct an inconsistent density source."
+        ]
+      },
+      {
+        "heading": "How moisture complicates bulk material weights",
+        "paragraphs": [
+          "Material can carry water within its pores or on particle surfaces. Moisture adds weight and can alter how particles pack. A pile of topsoil can change mass after rainfall without any new mineral soil being delivered. For sand and aggregate, the difference may also affect bulk handling and compaction.",
+          "If a project is weight-sensitive, request a supplier value for the relevant moisture condition or actual scale weights. When only a rough planning factor is available, label the output as approximate and avoid using it to determine a truck's legal payload. The [[dump truck load calculator|/dump-truck-load-calculator/]] separates volume and weight constraints."
+        ]
       }
     ],
     "faqs": [
@@ -230,6 +244,20 @@ export const articlesC:Record<string,ExpansionArticle>={
         "paragraphs": [
           "Choose bags when the job is small or access is restricted, and bulk delivery when the volume and transport logistics justify it. In both cases, confirm product equivalence, actual volume or yield, cost, any fees, whole-bag rounding and expected leftover material.",
           "For the original volume estimate, use the [[cubic yard calculator|/]]. For material-specific questions, consult the [[mulch calculator|/mulch-cubic-yard-calculator/]], [[compost calculator|/compost-cubic-yard-calculator/]] or [[concrete calculator|/concrete-cubic-yard-calculator/]] as appropriate."
+        ]
+      },
+      {
+        "heading": "Comparing two bag sizes at the same material volume",
+        "paragraphs": [
+          "Suppose a project requires 1.6 cubic yards, equal to 43.2 cubic feet. If a 2-cubic-foot bag costs a hypothetical $5.50, you need 22 whole bags, costing $121. If a 3-cubic-foot bag of an equivalent product costs $8.00, you need 15 bags, costing $120. The larger bag is marginally cheaper in this example, but the difference could disappear after taxes or local promotions.",
+          "Comparing only $5.50 against $8.00 is not useful because the package sizes differ. A price-per-cubic-foot comparison is more informative, while the number of whole bags determines the actual checkout total. Product equivalence still matters: different mulch textures or soil blends may not give the same finished result."
+        ]
+      },
+      {
+        "heading": "The practical cost of handling and storing materials",
+        "paragraphs": [
+          "Some homeowners prefer bags because they can move one at a time through a narrow path or store unopened packages until a later phase. Others prefer a bulk pile because opening dozens of bags would require more effort and generate packaging waste. The lower cost option may depend on delivery distance, time and the physical demands of unloading.",
+          "Ask whether a bulk delivery must be dumped all at once and whether an approved storage area is available. For a moisture-sensitive product, keeping bags sheltered or using a covered bulk pile may matter. These considerations do not change the cubic-yard formula, but they affect whether a purchase is practical."
         ]
       }
     ],
@@ -360,6 +388,20 @@ export const articlesC:Record<string,ExpansionArticle>={
           "Make sure no sections overlap and that holes are subtracted. Measure horizontal plan area where the formula assumes it; a tape laid along a steep slope may measure a different distance. Keep dimensions, units and depth for every section. Calculate each section using unrounded measurements and round only at the final volume.",
           "Material-specific behavior still matters after the geometric takeoff. Gravel compaction, soil settlement and concrete form variations can affect quantities purchased, even when the plan area is correct. For a standard check, use the [[main cubic yard calculator|/]] and enter the measured section dimensions."
         ]
+      },
+      {
+        "heading": "A repeatable field measurement workflow",
+        "paragraphs": [
+          "Lay a straight reference line along one side of the proposed project and mark consistent stations along it. At each station, measure the perpendicular distance to the curved boundary. These offset measurements give a more useful record than a single maximum width. They can be used to divide the footprint into short trapezoidal sections.",
+          "Sketch each station and write dimensions immediately to avoid transposing numbers. Confirm that the reference line and offset measurements use the same unit. Use a second measurement to check the overall length and take additional offsets wherever the curve changes sharply. This method improves a hand estimate, but major grading work may require a survey."
+        ]
+      },
+      {
+        "heading": "Why slopes and vertical depths require extra care",
+        "paragraphs": [
+          "On a steep surface, a tape run along the ground is longer than its horizontal plan projection. Basic area × vertical depth calculations generally assume a horizontal plan area and a consistent vertical thickness. Mixing the sloping surface distance with a vertical depth may distort the estimate.",
+          "For a simple garden-bed layer, measure dimensions in the way the finished layer will actually be specified. For earthwork involving cut and fill elevations, use suitable survey-based measurements and cross sections. Do not assume the same average depth is valid across pits, slopes and irregular terrain."
+        ]
       }
     ],
     "faqs": [
@@ -488,6 +530,27 @@ export const articlesC:Record<string,ExpansionArticle>={
           "Do not multiply two dimensions and label the result cubic yards; two lengths produce area, not volume. Do not divide square feet by 27 to obtain cubic yards; area needs depth first. Do not assume 'one yard' in a supplier quote always means the same thing.",
           "Write linear dimensions as ft or yd, areas as ft² or yd², and volumes as ft³ or yd³. A simple unit check often reveals a calculation error before the number reaches a purchase order."
         ]
+      },
+      {
+        "heading": "Everyday examples: turf, edging and bulk soil",
+        "paragraphs": [
+          "A turf installation may be priced by square yard because the main quantity is the surface area covered. Landscape edging may be sold by linear feet or linear yards because only the boundary length matters. Bulk topsoil is priced by cubic yard because the material must occupy a three-dimensional space.",
+          "Imagine a 30-foot-long, 6-foot-wide garden bed. Its edging length along one side is 10 linear yards; its 180-square-foot footprint is 20 square yards. If it receives 6 inches of new soil, the volume is 180 × 6 ÷ 324 ≈ 3.33 cubic yards. These three numbers describe different parts of the same project."
+        ]
+      },
+      {
+        "heading": "What the superscript ² and ³ actually mean",
+        "paragraphs": [
+          "The number ² indicates two multiplied length dimensions: one square yard is one yard × one yard. The number ³ indicates three multiplied dimensions: one cubic yard is one yard × one yard × one yard. That mathematical distinction is why dividing area by a cubic conversion factor does not produce a valid volume result.",
+          "A useful habit is to write a unit beside each dimension in the original formula. Feet multiplied by feet produce square feet, while square feet multiplied by feet produce cubic feet. If the resulting unit doesn't match the type of quantity you want, the calculation is missing or mixing a measurement."
+        ]
+      },
+      {
+        "heading": "Converting between feet-based and yard-based units",
+        "paragraphs": [
+          "To convert feet into linear yards, divide by three. To convert square feet into square yards, divide by nine. To convert cubic feet into cubic yards, divide by 27. The divisors follow from one, two or three length dimensions respectively.",
+          "That pattern is easy to remember but should not be used indiscriminately. A 27-square-foot surface equals three square yards, not one cubic yard. You need another depth measurement to obtain the volume. The [[cubic feet converter|/cubic-feet-to-cubic-yards/]] handles exact volume conversions."
+        ]
       }
     ],
     "faqs": [
@@ -613,6 +676,20 @@ export const articlesC:Record<string,ExpansionArticle>={
           "Identify whether the project needs landscaping topsoil, general nonstructural fill or engineered structural fill. Establish the required finished elevation and depth using measured grades. Confirm which soil product is specified and whether the supplier quotes loose yards or weight. Do not use topsoil for structural fill merely because it is readily available.",
           "When backfilling trenches or building pads, project safety, permits and material specifications are separate from the volume arithmetic. Obtain qualified advice for structural or significant earthwork and do not assume a calculator can determine compaction acceptance."
         ]
+      },
+      {
+        "heading": "How to document material-state factors in a project estimate",
+        "paragraphs": [
+          "Rather than storing only one 'waste factor,' record bank volume, loose haul volume and required compacted fill volume as separate quantities. For each conversion, note the factor's numerical value, whether it is applied as a multiplier or divisor, the source of the factor and the material state being compared.",
+          "For example, a project might document a loose-to-bank multiplier of 1.18 for a particular material. You should not use it to convert compacted yards back to bank yards without additional information. Factor direction matters; applying a ratio backward can magnify an error even when the percentages appear reasonable."
+        ]
+      },
+      {
+        "heading": "Volume calculations and field compaction testing are different tasks",
+        "paragraphs": [
+          "A rectangular layer's volume can be calculated from dimensions alone. Field compaction verification may involve measured dry density, moisture content, laboratory reference density and specified acceptance criteria. That testing does not follow automatically from the number of cubic yards entered into a planning tool.",
+          "When a specification references a particular percentage of laboratory maximum dry density, it is referring to density performance under defined methods. It is not a direct statement of shrinkage by that percentage. Projects where stability or settlement matters should follow the appropriate geotechnical and construction requirements."
+        ]
       }
     ],
     "faqs": [
@@ -728,6 +805,20 @@ export const articlesC:Record<string,ExpansionArticle>={
         "paragraphs": [
           "Do not treat all 'yards' in invoices as the same material state. Do not order by truck capacity alone without confirming actual payload. Avoid comparing bags and bulk by pounds when coverage depends on volume. Do not request a dump location before checking vehicle access and unloading safety.",
           "Use a delivery checklist for each materially different product, even on the same project. The [[cubic yard calculator|/]] handles the initial geometry, but a correct calculation does not replace real supplier coordination."
+        ]
+      },
+      {
+        "heading": "Simple order record to prevent delivery misunderstandings",
+        "paragraphs": [
+          "A practical purchase note can fit on one page: product name and specification, measured geometric yardage, selected order quantity, selling unit, supplier name, delivery fee, planned number of trips and unloading location. Include the date and a contact method for the delivery coordinator. For bulk aggregates, record any supplier-provided weight-per-yard assumption.",
+          "Keep the supplier's confirmation and compare the invoice with the order. If a delivery arrives short, verify whether the invoice is for loose cubic yards, short tons or truck trips before arguing from how big a pile looks. An informal visual estimate of a mound is rarely a reliable measurement."
+        ]
+      },
+      {
+        "heading": "Different delivery methods require different site preparation",
+        "paragraphs": [
+          "Ready-mix concrete must be placed and handled according to the project schedule and supplier instructions. A bulk gravel pile can often be moved after delivery, but the truck may need safe clearance to tip its bed. Bagged compost may arrive on a pallet and require unloading equipment or a place sheltered from weather.",
+          "Ask the supplier what vehicle or handling equipment is used and who is responsible for access, movement and site cleanup. When material quality depends on keeping it free from soil or moisture contamination, plan a suitable storage surface before the delivery date."
         ]
       }
     ],
