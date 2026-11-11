@@ -37,7 +37,7 @@ for(const slug of [...materialPages,...conversionPages]){
  const minH2=materialPages.includes(slug)?9:7;
  if(words<minWords)failures.push(slug+": only "+words+" visible words, expected at least "+minWords);
  if(h1!==1)failures.push(slug+": "+h1+" H1 headings (expected exactly one)");
- if(h2<minH2)failures.push(slug+": only "+h2+" H2 headings (expected at least "+minH2)");
+ if(h2<minH2)failures.push(slug+": only "+h2+" H2 headings (expected at least "+minH2+")");
  if(faq<5)failures.push(slug+": "+faq+" FAQ details (expected at least 5)");
  if(duplicate.length)failures.push(slug+": duplicated H2 "+[...new Set(duplicate)].join("; "));
  if(!html.includes('name="description"'))failures.push(slug+": missing meta description");
